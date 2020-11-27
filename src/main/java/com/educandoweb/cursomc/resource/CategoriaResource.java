@@ -1,8 +1,5 @@
 package com.educandoweb.cursomc.resource;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.educandoweb.cursomc.domain.Categoria;
 import com.educandoweb.cursomc.services.CategoriaService;
 
