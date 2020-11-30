@@ -36,3 +36,6 @@ database/Novo Documento de Texto.txt
 h2/databaseh2.mv.db
 src/main/java/com/educandoweb/cursomc/domain/Cliente.java
 h2/databaseh2.trace.db
+
+### Extensões ###
+*.log
