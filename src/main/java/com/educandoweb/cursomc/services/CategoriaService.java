@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import com.educandoweb.cursomc.domain.Categoria;
+import com.educandoweb.cursomc.dto.CategoriaDTO;
 import com.educandoweb.cursomc.repositories.CategoriaRepository;
 import com.educandoweb.cursomc.services.exceptions.DataIntegrityException;
 import com.educandoweb.cursomc.services.exceptions.ObjectNotFoundException;
@@ -54,4 +55,9 @@ public class CategoriaService {
         PageRequest pageRequest = PageRequest.of(page, linesPerPage, Direction.valueOf(direction), orderBy);
         return repo.findAll(pageRequest);
     }
+
+    public Categoria fromDTO(CategoriaDTO categoriaDTO) {
+        return new Categoria(categoriaDTO.getId(), categoriaDTO.getNome());
+    }
+
 }
